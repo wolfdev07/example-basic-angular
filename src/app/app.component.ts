@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-example';
+
+  showCurses: boolean = true;
+
+  handleChange(){
+    this.showCurses = !this.showCurses;
+    console.info(this.showCurses);
+  }
 }
